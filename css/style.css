@@ -81,6 +81,7 @@ section {
 .home-img img {
     width: 30vw;
     box-shadow: 0 0 3rem var(--main-color);
+    border-radius: 50%;
 }
 
 .home-content h3 {
@@ -168,6 +169,7 @@ span {
 
 .sobre-img img {
     width: 35vw;
+    border-radius: 50%;
 }
 
 .heading {
@@ -175,3 +177,37 @@ span {
     font-size: 4.5rem;
 }
 
+.sobre-content h2{
+    text-align: left;
+    line-height: 1.2;
+}
+
+.sobre-content h3{
+    font-size: 2.6rem;
+}
+
+.sobre-content p {
+    font-size: 1.6rem;
+    margin: 2rem 0 3rem;
+}
+
+.services h2{
+    margin-bottom: 5rem;
+}
+
+.services-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5rem;  
+}
+
+.services-container .services-box {
+    flex: 1 1 30rem;
+    background: var(--second-bg-color);
+    padding: 3rem 2rem 4rem;
+    border-radius: 2rem;
+    text-align: center;
+    border: .2rem solid var(--bg-color);
+}
