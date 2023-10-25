@@ -257,6 +257,11 @@ span {
 
 .portfolio-box img {
     width: 100%;
+    transition: .5s ease;
+}
+
+.portfolio-box:hover img {
+    transform: scale(1.1);
 }
 
 .portfolio-box .portfolio-layer {
@@ -272,6 +277,12 @@ span {
     flex-direction: column;
     text-align: center;
     padding: 0 4rem;
+    transform: translateY(100%);
+    transition: .5s ease;
+}
+
+.portfolio-box:hover .portfolio-layer{
+    transform: translate(0);
 }
 
 .portfolio-layer h4 {
@@ -291,4 +302,46 @@ span {
     height: 5rem;
     background: var(--text-color);
     border-radius: 50%;
+}
+
+.portfolio-layer a i{
+    font-size: 2rem;
+    color: var(--second-bg-color);
+}
+
+.contato h2{
+    margin-bottom: 3rem
+}
+
+.contato form {
+    max-width: 70rem;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.contato form .input-box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contato form .input-box input,
+.contato form textarea {
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    color: var(--text-color);
+    background: var(--second-bg-color);
+    border-radius: .8rem;
+    margin: .7rem 0;
+}
+
+.contato form textarea {
+    resize: none;
+}
+
+.contato form .btn {
+    margin-top: 2rem;
+    cursor: pointer;
 }
